@@ -1,0 +1,22 @@
+archetypeCatalog  internal(添加此key values,解决maven创建过慢的问题)
+
+create database ssm;
+use ssm
+create table account(
+  id int primary key auto_increment,
+  name varchar(20),
+  money double
+);
+insert into account(name,money) values('美美',200);
+insert into account(name,money) values('臭臭',500);
+
+#Spring整合SpringMVC  启动Tomcat服务器的时候 需要加载Spring的配置文件
+    ServletContext域对象（服务器启动的时候创建，关闭时才销毁）  
+	一类监听器  监听ServletContext域对象的创建和销毁（只执行一次）
+	监听器去加载Spring配置文件 创建Web版本工厂  存储ServletContext对象
+	ContextLoaderListener  extends ContextLoader implements ServletContextListener
+	
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
