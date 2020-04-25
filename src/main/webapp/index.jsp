@@ -11,6 +11,15 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/account/testFindAll">测试</a>
+<a href="/account/testFindAll">测试查询</a>
+
+<h1>测试保存</h1>
+
+<form action="/account/testSave" method="post">
+    姓名：<input type="text" name="name"><br>
+    金额：<input type="text" name="money"><br>
+    <input type="submit" value="保存">
+</form>
+<br>
 </body>
 </html>
